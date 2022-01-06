@@ -2,7 +2,7 @@ use std::env::{args, Args};
 
 fn main() {
     let mut args: Args = args();
-    // The first argument is the location of the compiled binary, so skip it
+    
     let first: String = args.nth(1).unwrap();
     let operator: char = args.nth(0).unwrap().chars().next().unwrap();
     let second: String = args.nth(0).unwrap();
